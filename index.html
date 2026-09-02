@@ -88,6 +88,11 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            overflow: visible;
+        }
+
+        .slide-1 .slide-content {
+            overflow: visible;
         }
 
         .escudos-container {
@@ -95,8 +100,12 @@
             justify-content: center;
             align-items: center;
             gap: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            padding-top: 10px;
+            padding-bottom: 14px;
             flex-wrap: wrap;
+            overflow: visible;
         }
 
         .escudo {
@@ -104,8 +113,9 @@
             height: 180px;
             object-fit: contain;
             filter: drop-shadow(0 0 40px rgba(35, 115, 170, 0.6)) drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
-            animation: floatIcon 3s ease-in-out infinite;
+            animation: floatIcon 4s ease-in-out infinite;
             transition: transform 0.3s ease;
+            transform-origin: center bottom;
         }
 
         .escudo:hover {
@@ -118,8 +128,8 @@
         }
 
         @keyframes floatIcon {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+            0%, 100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-16px) scale(1.02); }
         }
 
         .slide-1 h1 {
@@ -466,13 +476,18 @@
                         <h3>🏗️ Infraestructura Tecnológica</h3>
                         <p><strong>📹 75 Cámaras de Videovigilancia:</strong> Monitoreo permanente 24/7 con cobertura en accesos y puntos estratégicos.</p>
                         <p><strong>🚗 886 Lectores ANPR/LPR:</strong> Reconocimiento automático de matrículas en toda la Ciudad.</p>
-                        <p><strong>🚙 43 Rodados Operativos:</strong> Flota de respuesta y seguimiento permanente.</p>
-                        <p><strong>👮 254 Efectivos Policiales:</strong> Personal capacitado y entrenado en destrezas especiales.</p>
+
+                        <h4 style="color: #267ca2; font-size: 13px; margin: 10px 0 6px; text-transform: uppercase; letter-spacing: 0.5px;">🚙 Parque Automotor</h4>
+                        <p><strong>43 Rodados Operativos:</strong> Flota de respuesta y seguimiento permanente.</p>
+
+                        <h4 style="color: #267ca2; font-size: 13px; margin: 12px 0 6px; text-transform: uppercase; letter-spacing: 0.5px;">👮 Recursos Humanos</h4>
+                        <p><strong>254 Efectivos Policiales y Civiles:</strong> Personal capacitado y entrenado en destrezas especiales.</p>
                     </div>
 
                     <div class="content-column">
                         <h3>⚙️ Funciones Principales</h3>
                         <ul>
+                            <li><strong>🚨 Detección y detención:</strong> Vehículos con impedimento legal vigente</li>
                             <li><strong>🎯 Detección Temprana:</strong> Vehículos y situaciones de interés en tiempo real</li>
                             <li><strong>📊 Monitoreo:</strong> Cámaras de videovigilancia y sistemas ANPR/LPR</li>
                             <li><strong>✓ Verificación:</strong> Evaluación y validación de alarmas y eventos</li>
@@ -484,7 +499,9 @@
                         <p style="font-size: 12px; color: #b8b8b8; line-height: 1.6;">
                             Sistema de Gestión <strong>ISO 9001:2015</strong><br>
                             Certificado por <strong>TÜV Rheinland</strong><br>
-                            Cert. N° 01 10006 2129714
+                            <a href="https://www.certipedia.com/certificates/01+10006+2129714?locale=es" target="_blank" rel="noopener noreferrer" style="color: #7dc1e5; text-decoration: underline;">
+                                Cert. N° 01 10006 2129714
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -538,7 +555,7 @@
                                 <td><span style="color: #267ca2; font-weight: 600;">↑ 8.3%</span></td>
                             </tr>
                             <tr style="background: rgba(38, 124, 162, 0.08);">
-                                <td class="año-cell">✓ Actuaciones GAP</td>
+                                <td class="año-cell">✓ Actuaciones totales</td>
                                 <td><strong>1.696</strong></td>
                                 <td><strong style="color: #267ca2;">3.092</strong></td>
                                 <td><span style="color: #267ca2; font-weight: 600;">↑ 82.4%</span></td>
@@ -546,14 +563,14 @@
                             <tr style="background: rgba(38, 124, 162, 0.08);">
                                 <td class="año-cell">✓ Vehículos Identificados</td>
                                 <td><strong>7.809</strong></td>
-                                <td><strong style="color: #267ca2;">7.181</strong></td>
-                                <td><span style="color: #b8b8b8;">Operativo</span></td>
+                                <td><strong style="color: #dc2626;">7.181</strong></td>
+                                <td><span style="color: #dc2626; font-weight: 700;">↓ 8.0%</span></td>
                             </tr>
                             <tr style="background: rgba(38, 124, 162, 0.08);">
                                 <td class="año-cell">✓ Personas Identificadas</td>
                                 <td><strong>8.468</strong></td>
-                                <td><strong style="color: #267ca2;">8.393</strong></td>
-                                <td><span style="color: #b8b8b8;">Estable</span></td>
+                                <td><strong style="color: #dc2626;">8.393</strong></td>
+                                <td><span style="color: #dc2626; font-weight: 700;">↓ 0.9%</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -586,8 +603,8 @@
                             <tr style="background: rgba(38, 124, 162, 0.08);">
                                 <td class="año-cell">✓ Alarmas Válidas Detectadas</td>
                                 <td><strong>61.389</strong></td>
-                                <td><strong style="color: #267ca2;">38.782</strong></td>
-                                <td><span style="color: #b8b8b8;">Optimización</span></td>
+                                <td><strong style="color: #dc2626;">38.782</strong></td>
+                                <td><span style="color: #dc2626; font-weight: 700;">↓ 36.8%</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -613,7 +630,7 @@
                             </li>
                             <li style="font-size: 15px; color: #b8b8b8; margin-bottom: 15px; padding-left: 30px; position: relative;">
                                 <span style="position: absolute; left: 0; color: #267ca2; font-weight: bold;">✓</span>
-                                <strong>+82.4%</strong> en actuaciones GAP (1.6K → 3.0K)
+                                <strong>+82.4%</strong> en actuaciones (1.6K → 3.0K)
                             </li>
                             <li style="font-size: 15px; color: #b8b8b8; margin-bottom: 15px; padding-left: 30px; position: relative;">
                                 <span style="position: absolute; left: 0; color: #267ca2; font-weight: bold;">✓</span>
@@ -720,20 +737,20 @@
                 new Chart(ctxProcedimientos, {
                     type: 'bar',
                     data: {
-                        labels: ['Interceptaciones', 'Aprehendidos', 'Actuaciones GAP'],
+                        labels: ['Interceptaciones', 'Aprehendidos', 'Actuaciones'],
                         datasets: [
                             {
                                 label: '2025',
                                 data: [979, 290, 1696],
-                                backgroundColor: 'rgba(35, 115, 170, 0.6)',
-                                borderColor: '#2373aa',
+                                backgroundColor: 'rgba(30, 136, 229, 0.8)',
+                                borderColor: '#1E88E5',
                                 borderWidth: 2
                             },
                             {
                                 label: '2026',
                                 data: [866, 314, 3092],
-                                backgroundColor: 'rgba(38, 124, 162, 0.6)',
-                                borderColor: '#267ca2',
+                                backgroundColor: 'rgba(245, 158, 11, 0.8)',
+                                borderColor: '#F59E0B',
                                 borderWidth: 2
                             }
                         ]
@@ -774,12 +791,12 @@
                             {
                                 label: '2025',
                                 data: [3039520, 665039, 2292033],
-                                borderColor: '#2373aa',
-                                backgroundColor: 'rgba(35, 115, 170, 0.1)',
+                                borderColor: '#1E88E5',
+                                backgroundColor: 'rgba(30, 136, 229, 0.15)',
                                 borderWidth: 3,
                                 fill: true,
                                 tension: 0.4,
-                                pointBackgroundColor: '#2373aa',
+                                pointBackgroundColor: '#1E88E5',
                                 pointBorderColor: '#ffffff',
                                 pointBorderWidth: 2,
                                 pointRadius: 5
@@ -787,12 +804,12 @@
                             {
                                 label: '2026',
                                 data: [3166212, 1753812, 1447622],
-                                borderColor: '#267ca2',
-                                backgroundColor: 'rgba(38, 124, 162, 0.1)',
+                                borderColor: '#F59E0B',
+                                backgroundColor: 'rgba(245, 158, 11, 0.15)',
                                 borderWidth: 3,
                                 fill: true,
                                 tension: 0.4,
-                                pointBackgroundColor: '#267ca2',
+                                pointBackgroundColor: '#F59E0B',
                                 pointBorderColor: '#ffffff',
                                 pointBorderWidth: 2,
                                 pointRadius: 5
